@@ -31,6 +31,17 @@ public class BankAccount {
             System.out.println("Balance: $" + balance);
         }
 
-        
+        //STEP 4: Add a Constructor
+        public BankAccount(String name, String number, double startBalance) {
+            accountName = name;
+            accountNumber = number;
+            balance = startBalance;
+        }
+
+        BankAccount acc1 = new BankAccount("Jokha", "12345", 100.0);
+
+
+
+
 
 }
