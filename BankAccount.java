@@ -11,6 +11,20 @@ public class BankAccount {
         balance = startBalance;
     }
 
+    public void deposit(double amount) {
+        balance += amount;
+        System.out.println("Deposited: $" + amount + " | New Balance: $" + balance);
+    }
+
+    public void withdraw(double amount) {
+        if (amount <= balance) {
+            balance -= amount;
+            System.out.println("Withdrew: $" + amount + " | New Balance: $" + balance);
+        } else {
+            System.out.println("Not enough money!");
+        }
+    }
+
     public void showAccountInfo() {
         System.out.println("Name: " + accountName);
         System.out.println("Account Number: " + accountNumber);
