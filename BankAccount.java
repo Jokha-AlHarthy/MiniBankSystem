@@ -1,6 +1,16 @@
 import java.util.Scanner;
 
 public class BankAccount {
+    String accountName;
+    String accountNumber;
+    double balance;
+
+    public void showAccountInfo() {
+        System.out.println("Name: " + accountName);
+        System.out.println("Account Number: " + accountNumber);
+        System.out.println("Balance: $" + balance);
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean running = true;
