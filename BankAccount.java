@@ -10,7 +10,7 @@ public class BankAccount {
         accountNumber = number;
         balance = startBalance;
     }
-    
+
     public void showAccountInfo() {
         System.out.println("Name: " + accountName);
         System.out.println("Account Number: " + accountNumber);
@@ -20,6 +20,11 @@ public class BankAccount {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean running = true;
+
+        BankAccount acc1 = new BankAccount("Jokha", "12345", 100.0);
+        BankAccount acc2 = new BankAccount("Khalfan", "67890", 250.0);
+        acc1.showAccountInfo();
+        acc2.showAccountInfo();
 
         while (running) {
             System.out.println("1. Create a new account");
