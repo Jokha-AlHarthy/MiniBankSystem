@@ -11,4 +11,10 @@ public class SavingsAccount extends BankAccount {
         deposit(interest);
         System.out.println("Interest Applied: $" + interest);
     }
+
+    @Override
+    public void showAccountInfo() {
+        super.showAccountInfo();
+        System.out.println("Interest Rate: " + (interestRate * 100) + "%");
+    }
 }
