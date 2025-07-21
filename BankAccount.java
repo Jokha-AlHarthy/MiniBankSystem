@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-//STEP 2: Create a Menu driven
 public class BankAccount {
     public static void main (String[] args){
         Scanner scanner = new Scanner(System.in);
         boolean running = true;
 
+        //STEP 2: Create a Menu driven
         while(running){
             System.out.println("====== Mini Bank Menu ======");
             System.out.println("1. Create a new account");
@@ -19,4 +19,18 @@ public class BankAccount {
             scanner.nextLine();
         }
     }
+
+        //STEP 3: creating a basic class
+        String accountName;
+        String accountNumber;
+        double balance;
+
+        public void showAccountInfo() {
+            System.out.println("Name: " + accountName);
+            System.out.println("Account Number: " + accountNumber);
+            System.out.println("Balance: $" + balance);
+        }
+
+        
+
 }
