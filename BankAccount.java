@@ -5,6 +5,12 @@ public class BankAccount {
     String accountNumber;
     double balance;
 
+    public BankAccount(String name, String number, double startBalance) {
+        accountName = name;
+        accountNumber = number;
+        balance = startBalance;
+    }
+    
     public void showAccountInfo() {
         System.out.println("Name: " + accountName);
         System.out.println("Account Number: " + accountNumber);
